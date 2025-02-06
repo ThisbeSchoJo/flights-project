@@ -1,10 +1,24 @@
 // import '../App.css';
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
 
 
 function App() {
+
+  const [flights, setFlights] = useState([])
+
+  useEffect(retrieveFlights, [])
+
+  function retrieveFlights(){
+    fetch("http://localhost:4000/flights")
+    .then(response => response.json())
+    .then(setFlights)
+    //^this just does the same as the following:
+    //.then(flightsData => setFlights(flightsData))
+  }
+
   return (
     <div className="app">
       <NavBar />
