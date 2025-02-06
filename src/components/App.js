@@ -23,7 +23,11 @@ function App() {
     <div className="app">
       <NavBar />
       <Header />
-      <Outlet />
+      <Outlet context={
+        {
+          flights: flights
+        }
+      }/>
     </div>
   );
 }
