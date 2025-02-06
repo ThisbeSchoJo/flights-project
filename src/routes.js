@@ -3,6 +3,7 @@ import App from "./components/App";
 import ErrorPage from "./components/ErrorPage";
 import FlightList from "./components/FlightList";
 import NewFlightForm from "./components/NewFlightForm";
+import About from "./components/About";
 
 const routes = [
     {
@@ -20,7 +21,7 @@ const routes = [
             },
             {
                 path: "/about",
-                element: <h1>About Us section goes here</h1>
+                element: <About />
             }
         ]
     }

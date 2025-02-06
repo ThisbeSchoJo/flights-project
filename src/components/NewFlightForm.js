@@ -35,7 +35,6 @@ function NewFlightForm(){
         })
         .then(response => {
             if(response.ok){
-                //add new flihgt
                 response.json().then(newFlightData => {
                     addFlight(newFlightData)
                 })
@@ -44,8 +43,6 @@ function NewFlightForm(){
                 alert("Error: Unable to add new flight")
             }
         })
-
-        // addFlight(formData)
     }
 
     return (
