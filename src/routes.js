@@ -18,7 +18,7 @@ const routes = [
             },
             {
                 path: "/about",
-                elemnt: <h1>About Us section goes here</h1>
+                element: <h1>About Us section goes here</h1>
             }
         ]
     }
