@@ -21,3 +21,8 @@ nav > a {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+img {
+  width: 300px; /* Set the width of the image */
+  height: auto;
+}
